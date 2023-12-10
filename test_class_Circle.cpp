@@ -10,15 +10,15 @@ using namespace std;
 
 class Circle{
     private:
-    float r;
+        float r;
     public:
-    void set_r(float a) {
-        r = a;
-    }
-    void circle_area( ) {
-        float area = r * r * MYPI;
-        cout << "半径为 " << r << " 的圆面积为： " << area << endl;
-    }
+        void set_r(float a) {
+            r = a;
+        }
+        void circle_area( ) {
+            float area = r * r * MYPI;
+            cout << "半径为 " << r << " 的圆面积为： " << area << endl;
+        }
 };
 
 int main() {

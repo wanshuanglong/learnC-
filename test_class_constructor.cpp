@@ -4,16 +4,16 @@ using namespace std;
 
 class Point {
     private: //这里的private关键字可以省略
-    int x,y; // 成员变量x,y是Point类私有的，
-    // 若要访问类的私有成员，可以通过定义public成员函数来实现
+        int x,y; // 成员变量x,y是Point类私有的，
+        // 若要访问类的私有成员，可以通过定义public成员函数来实现
     public:
-    void set1(int a, int b);
-    void printxy (); 
-    Point(); // constructor构造函数
-    Point(int a, int b); //不要忘记函数声明
-    Point(int);
-    //Point(int a = 9, int b =9); //利用构造函数给成员变量赋上默认值 
-    virtual ~Point(); // destructor析构函数
+        void set1(int a, int b);
+        void printxy (); 
+        Point(); // constructor构造函数
+        Point(int a, int b); //不要忘记函数声明
+        Point(int);
+        //Point(int a = 9, int b =9); //利用构造函数给成员变量赋上默认值 
+        virtual ~Point(); // destructor析构函数
 };
 //////////////////////////////////////////////////////////
 void Point :: set1(int a, int b) {
@@ -25,7 +25,7 @@ void Point :: printxy() { // 当成员函数定义很长时，可将成员函数
 }
 //////////////////////////////////////////////////////////
 Point :: Point() { //默认构造函数
-    cout << "The Constructor is called when an object is created." << endl;
+    cout << "The default Constructor is called when an object is created." << endl;
 }
 Point :: Point(int a, int b) { //
     x = a;
