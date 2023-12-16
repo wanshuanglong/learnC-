@@ -6,9 +6,9 @@ int main ()
 {
    // 数字定义
    //short  s = 10;
-   int    i = -1000;
+   int i = -1000;
    //long   l = 100000;
-   float  f = 230.47;
+   float f = 230.47;
    double d = 200.374;
  
    // 数学运算
@@ -16,7 +16,7 @@ int main ()
    cout << "abs(i)  :" << abs(i) << endl;
    cout << "floor(d) :" << floor(d) << endl;
    cout << "sqrt(f) :" << sqrt(f) << endl;
-   cout << "pow( d, 2) :" << pow(d, 2) << endl;
+   cout << "pow(d, 2) :" << pow(d, 2) << endl;
  
    return 0;
 }

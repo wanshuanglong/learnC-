@@ -31,3 +31,4 @@ int main()
 }
 // 编译需要使用 g++ test_multi_threads.cpp -o test_multi_threads -lpthread
 // 关键是参数 -lpthread
+// 运行用 ./test_multi_threads

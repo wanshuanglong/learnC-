@@ -10,6 +10,7 @@ int main()
    
    area = LENGTH * WIDTH;
    cout << area;
-   cout << NEWLINE;
+   cout << NEWLINE; // 输出一个换行符
+   cout << "--------------------------";
    return 0;
 }

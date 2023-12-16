@@ -12,7 +12,7 @@ class Shape {
       }
       int area()
       {
-         cout << "Parent class area :" <<endl;
+         cout << "Parent class area:" <<endl;
          return 0;
       }
 };
@@ -21,7 +21,7 @@ class Rectangle: public Shape{
       Rectangle( int a=0, int b=0):Shape(a, b) { }
       int area ()
       { 
-         cout << "Rectangle class area :" <<endl;
+         cout << "Rectangle class area:" <<endl;
          return (width * height); 
       }
 };
@@ -30,7 +30,7 @@ class Triangle: public Shape{
       Triangle( int a=0, int b=0):Shape(a, b) { }
       int area ()
       { 
-         cout << "Triangle class area :" <<endl;
+         cout << "Triangle class area:" <<endl;
          return (width * height / 2); 
       }
 };
@@ -40,7 +40,7 @@ int main( )
    Shape *shape;
    Rectangle rec(10,7);
    Triangle  tri(10,5);
- 
+   
    // 存储矩形的地址
    shape = &rec;
    // 调用矩形的求面积函数 area

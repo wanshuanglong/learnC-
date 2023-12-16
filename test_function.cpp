@@ -14,7 +14,7 @@ int main ()
    // 调用函数来获取最大值
    ret = max(a, b);
  
-   cout << "Max value is : " << ret << endl;
+   cout << "Max value is: " << ret << endl;
  
    return 0;
 }

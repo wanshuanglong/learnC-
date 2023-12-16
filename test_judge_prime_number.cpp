@@ -15,7 +15,10 @@ int main() {
     cout << "随机生成的正整数为：" << n << endl;
     bool an = JPrimeNumber(n); // 将判断素数语句包装成一个函数，方便调用 
     if (an == 1){
-        printf("%d 为素数", n);
+        printf("%d为素数", n);
+    }
+    else {
+        printf("%d不是素数\n",n);
     }
     // 筛选出2到100中的素数
     int narray[99];
@@ -56,10 +59,9 @@ bool JPrimeNumber(int nparameters){
         JP = 1;
     }
     return JP;
-
 }
 // 随机生成一个正整数的函数
-int RandomPositiveNum (){
+int RandomPositiveNum(){
     int positiveNum;
     do {
         //int positiveNum;
