@@ -9,6 +9,9 @@
 
 
 */
+// 我自己编写的代码
+/*
+
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
@@ -36,4 +39,53 @@ int main(){
             cout << "arr3[" << i << "][" << j << "] = " << arr3[i][j] << endl;
         }
     }
+}
+*/
+
+// 改进: 这样修改后的代码使用了std::vector来存储矩阵，
+// 使得代码更加简洁、易读。同时，将矩阵乘法的逻辑封装成了一个函数，提高了代码的可维护性。
+
+#include <iostream>
+#include <vector>
+#include <ctime>
+
+using namespace std;
+
+// 矩阵乘法函数
+vector<vector<int>> matrix_multiply(const vector<vector<int>>& arr1, const vector<vector<int>>& arr2) {
+    vector<vector<int>> result(3, vector<int>(3, 0));
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            for (int k = 0; k < 3; ++k) {
+                result[i][j] += arr1[i][k] * arr2[k][j];
+            }
+        }
+    }
+    return result;
+}
+
+int main() {
+    srand(time(0));
+    vector<vector<int>> arr1(3, vector<int>(3));
+    vector<vector<int>> arr2(3, vector<int>(3));
+    vector<vector<int>> arr3(3, vector<int>(3));
+
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            arr1[i][j] = rand() % 100 + 1;
+            arr2[i][j] = rand() % 100 + 1;
+        }
+    }
+
+    arr3 = matrix_multiply(arr1, arr2);
+
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            cout << "arr1[" << i << "][" << j << "] = " << arr1[i][j] << "\t";
+            cout << "arr2[" << i << "][" << j << "] = " << arr2[i][j] << "\t";
+            cout << "arr3[" << i << "][" << j << "] = " << arr3[i][j] << endl;
+        }
+    }
+
+    return 0;
 }

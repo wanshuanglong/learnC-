@@ -34,7 +34,7 @@ int main() {
         //cout << arr[i] << endl;
     }
     int *p = arr; // 定义一个指向整型的指针变量，指向数组的第一个元素；
-    int SEARCH_NUM = 91; // 定义一个整型变量表示查找的目标值；
+    int SEARCH_NUM = 90; // 定义一个整型变量表示查找的目标值；
     // 二分查找
     int left = p[0]; int right = p[NSIZE-1];
     int index_n = binarySearch (p,left,right, SEARCH_NUM); 

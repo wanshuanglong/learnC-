@@ -28,7 +28,7 @@ int main() {
     for (int i=0; i < NSIZE; ++i) {
         arr[i] = rand() % 100 ; // 初始化数组，放入0～99之间的随机数
         //cout << arr[i] << endl;
-        sorted_arr[i] = arr[i];
+        sorted_arr[i] = arr[i]; //初始化排序后数组
     }
     //sorted_arr = arr; //在C++里是不行的
     int *p1 = sorted_arr; int *p2 = sorted_arr;

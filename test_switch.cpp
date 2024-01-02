@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    char c = 'A';
+    char c = 'a';
 
     switch (c) {
         case 'A':
